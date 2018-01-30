@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { DataService } from "./data.service";
 import { Routes, RouterModule } from '@angular/router'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
@@ -35,7 +36,7 @@ const routes: Routes = [{
   exports: [
     RouterModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
